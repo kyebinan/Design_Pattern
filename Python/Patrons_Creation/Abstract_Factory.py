@@ -20,7 +20,6 @@ class MacButtonWidget(ButtonWidget):
     def get_widget(self):
         return self.widget
     
-
 class LabelWidget(ABC):
     @abstractmethod
     def get_widget(self):
@@ -56,21 +55,19 @@ class GUIFactory(ABC):
 class WinFactory(GUIFactory):
 
     def create_button(master, **kwargs):
-        pass
+        return WinButtonWidget(master, **kwargs)
 
-    
     def create_label(master, **kwargs):
-        pass
+        return WinLabelWidget(master, **kwargs)
 
 
 class MacFactory(GUIFactory):
 
     def create_button(master, **kwargs):
-        pass
+        return MacButtonWidget(master, **kwargs)
 
-    
     def create_label(master, **kwargs):
-        pass
+        return MacLabelWidget(master, **kwargs)
 
 
 class Application:
