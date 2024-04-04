@@ -23,3 +23,7 @@ High-level classes should not depend on low-level classes. Both should depend on
 
 ### 1.FACTORY METHOD
 Factory Method is a creative design pattern that defines an interface to create objects in a parent class, but delegates the choice of object types to be created to subclasses.
+
+### 2.ABSTRACT FACTORY
+Abstract Factory is a design pattern that allows to create families of related objects without specifying their concrete class.
+
