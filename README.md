@@ -20,3 +20,6 @@ Clients should not be forced to depend on methods they do not use.
 High-level classes should not depend on low-level classes. Both should depend on abstractions. An abstraction should not depend on details. Details should depend on abstractions.
 
 ## CATALOG OF DESIGN PATTERNS
+
+### 1.FACTORY METHOD
+Factory Method is a creative design pattern that defines an interface to create objects in a parent class, but delegates the choice of object types to be created to subclasses.
