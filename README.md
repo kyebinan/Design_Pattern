@@ -21,6 +21,8 @@ High-level classes should not depend on low-level classes. Both should depend on
 
 ## CATALOG OF DESIGN PATTERNS
 
+## I. CREATIONAL DESIGN PATTERNS
+
 ### 1.FACTORY METHOD
 Factory Method is a creative design pattern that defines an interface to create objects in a parent class, but delegates the choice of object types to be created to subclasses.
 
