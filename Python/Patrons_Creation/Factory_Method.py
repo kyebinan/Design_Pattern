@@ -1,7 +1,7 @@
 import tkinter as tk 
 from abc import ABC, abstractmethod
 
-class Widget:
+class Widget(ABC):
     @abstractmethod
     def get_widget():
         pass
@@ -29,7 +29,7 @@ class EntryWidget(Widget):
     
 
 
-class WidgetFactory:
+class WidgetFactory(ABC):
     @staticmethod
     @abstractmethod
     def create_widget(master, **kwargs):
