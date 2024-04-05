@@ -71,26 +71,26 @@ class MacFactory(GUIFactory):
 
 
 class Application:
-    def __init__(self, master, **kwargs):
-        pass
+    def __init__(self, factory, **kwargs):
+        self.root = tk.Tk()
+        self.root.geometry("300x200")
+        self.factory = factory
+        self.button = self.factory.create_button(self.root)
+        self.label = self.factory.create_label(self.root)
+
+    def mainloop(self):
+        self.button.get_widget().pack()
+        self.label.get_widget().pack()
+        self.root.mainloop()
 
 
 
 
 def main():
-    # root = tk.Tk()
-    # root.geometry("300x200")
-
-    # label = LabelFactory.create_widget(root, text="Hello, World!").get_widget()
-    # label.pack()
-
-    # button = ButtonFactory.create_widget(root, text="Click Me!").get_widget()
-    # button.pack()
-
-    # entry = EntryFactory.create_widget(root).get_widget()
-    # entry.pack()
-
-    # root.mainloop()
+    AppWin = Application(WinFactory)
+    AppWin.mainloop()
+    AppMac = Application(MacFactory)
+    AppMac.mainloop()
     pass
 
 if __name__ == "__main__":
