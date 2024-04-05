@@ -29,3 +29,7 @@ Factory Method is a creative design pattern that defines an interface to create 
 #### 2.ABSTRACT FACTORY
 Abstract Factory is a design pattern that allows to create families of related objects without specifying their concrete class.
 
+#### 3.BUILDER
+Builder is a creative design pattern that allows one to build complex objects step by step. It allows to production of different variations or representations of an object using the same build code.
+
+
