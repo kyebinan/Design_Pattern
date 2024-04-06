@@ -1,3 +1,12 @@
+"""
+Abstract Factory Design Pattern
+
+Intent: Lets you produce families of related objects without specifying their
+concrete classes.
+"""
+
+
+from __future__ import annotations
 import tkinter as tk 
 from abc import ABC, abstractmethod
 
