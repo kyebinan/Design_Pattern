@@ -36,4 +36,7 @@ Unlike other creative patterns, the Builder allows you to make products that do 
 #### 4.PROTOTYPE
 Prototype is a design pattern that creates new objects from existing objects without making the code dependent on their class
 
+#### 5.SINGLETON
+Singleton is a creative design pattern that guarantees the instance of a class exists in only one copy, while providing a global access point to that instance.
+
 
