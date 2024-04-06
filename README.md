@@ -31,5 +31,6 @@ Abstract Factory is a design pattern that allows to create families of related o
 
 #### 3.BUILDER
 Builder is a creative design pattern that allows one to build complex objects step by step. It allows to production of different variations or representations of an object using the same build code.
+Unlike other creative patterns, the Builder allows you to make products that do not follow the same interface.
 
 
